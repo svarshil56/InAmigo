@@ -1,8 +1,11 @@
 import { Navbar } from "@/components/sections/Navbar";
 import { Hero } from "@/components/sections/Hero";
+import { TrustMarquee } from "@/components/sections/TrustMarquee";
 import { Impact } from "@/components/sections/Impact";
+import { ImpactMap } from "@/components/sections/ImpactMap";
 import { About } from "@/components/sections/About";
 import { Initiatives } from "@/components/sections/Initiatives";
+import { Testimonials } from "@/components/sections/Testimonials";
 import { Gallery } from "@/components/sections/Gallery";
 import { Volunteer } from "@/components/sections/Volunteer";
 import { Footer } from "@/components/sections/Footer";
@@ -15,9 +18,12 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between w-full overflow-hidden">
       <Navbar />
       <Hero />
+      <TrustMarquee />
       <Impact />
+      <ImpactMap />
       <About />
       <Initiatives />
+      <Testimonials />
       <Gallery />
       <Volunteer />
       
