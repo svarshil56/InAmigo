@@ -1,20 +1,24 @@
 import { Section } from "@/components/ui/Section";
 import { FadeIn } from "@/components/ui/FadeIn";
+import { Counter } from "@/components/ui/Counter";
 
 const stats = [
   {
     title: "LIVES IMPACTED",
-    value: "50k+",
+    value: 50000,
+    suffix: "+",
     desc: "We have reached over 50,000 beneficiaries across India through our various grassroots programs.",
   },
   {
     title: "VOLUNTEERS",
-    value: "200+",
+    value: 200,
+    suffix: "+",
     desc: "A strong network of dedicated professionals and youth driving ground-level change.",
   },
   {
     title: "STATES REACHED",
-    value: "28+",
+    value: 28,
+    suffix: "+",
     desc: "Expanding our footprint across the nation to build sustainable communities everywhere.",
   },
 ];
@@ -44,7 +48,8 @@ export function Impact() {
             
             <div>
               <h3 className="font-heading font-black text-6xl md:text-7xl lg:text-8xl text-black mb-6 tracking-tighter">
-                {stat.value.replace('+', '')}<span className="text-[var(--color-terracotta)]">+</span>
+                <Counter value={stat.value} />
+                <span className="text-[var(--color-terracotta)]">{stat.suffix}</span>
               </h3>
               <p className="text-[var(--color-slate)] text-sm md:text-base leading-relaxed font-medium">
                 {stat.desc}

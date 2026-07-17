@@ -1,0 +1,35 @@
+.portfolioHeartContainer {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  aspect-ratio: 640 / 600;
+  margin: 0 auto;
+}
+.portfolioPiece {
+  position: absolute;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 4px;
+}
+.pieceImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.portfolioPiece:hover .pieceImage {
+  transform: scale(1.1);
+}
+.heartOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 10;
+}
+.lightboxOverlay {
+  background: rgba(16, 17, 17, 0.85);
+  backdrop-filter: blur(8px);
+}

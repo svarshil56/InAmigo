@@ -8,7 +8,7 @@ import Image from "next/image";
 
 export function Hero() {
   return (
-    <section className="relative min-h-[100svh] flex flex-col justify-center items-center overflow-hidden">
+    <section className="relative w-full min-h-[100svh] flex flex-col justify-center items-center overflow-hidden">
       {/* Background Image with Zoom Effect */}
       <motion.div 
         className="absolute inset-0 z-0"
@@ -17,8 +17,8 @@ export function Hero() {
         transition={{ duration: 10, ease: "easeOut" }}
       >
         <Image
-          src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=2940&auto=format&fit=crop"
-          alt="Volunteers interacting with community"
+          src="/new_hero_bg.jpeg"
+          alt="Children smiling and making peace signs"
           fill
           className="object-cover"
           priority

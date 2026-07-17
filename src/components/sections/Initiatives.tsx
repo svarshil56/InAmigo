@@ -7,31 +7,37 @@ const initiatives = [
     title: "BachpanShala",
     subtitle: "Nurturing Young Minds, Building Bright Futures",
     description: "Ensuring quality education for underprivileged children. We believe education changes generations, breaking the cycle of poverty and opening doors to a brighter future.",
-    image: "https://inamigosfoundation.org.in/public/storage/slideshow/1738235951.jpg",
+    image: "/images/initiative_edu.png",
   },
   {
     title: "Udaan",
     subtitle: "Soaring Towards a Brighter Future",
     description: "Women empowerment through skill development and financial independence. When we empower women, we empower entire communities.",
-    image: "https://inamigosfoundation.org.in/public/storage/slideshow/1738235638.jpg",
+    image: "/images/initiative_women.png",
   },
   {
     title: "Prakriti",
     subtitle: "Plant for a Better Tomorrow",
     description: "Environmental conservation and sustainability efforts. Because the planet we leave behind is just as important as the one we live in today.",
-    image: "https://inamigosfoundation.org.in/public/storage/slideshow/1738236201.jpg",
+    image: "/images/initiative_env.png",
   },
   {
     title: "Jeev",
     subtitle: "Empowering Lives, Spreading Compassion",
     description: "Animal welfare, including rescue, protection and feeding. Every life deserves compassion and care in our shared ecosystem.",
-    image: "https://inamigosfoundation.org.in/public/storage/slideshow/1738235697.jpg",
+    image: "/images/initiative_animal.png",
   },
   {
     title: "Seva",
     subtitle: "Serving Humanity with Compassion",
     description: "Providing food and clothing to the underprivileged. Communities grow stronger together when we look out for our most vulnerable neighbors.",
-    image: "https://inamigosfoundation.org.in/public/storage/slideshow/1738236132.jpg",
+    image: "/images/initiative_food.png",
+  },
+  {
+    title: "Vikas",
+    subtitle: "Enhancing Employability Through Skills",
+    description: "Enhancing employability through targeted skill development programs for youth and communities. A skill in hand restores dignity and opens the door to lasting change.",
+    image: "/images/initiative_skills.png",
   }
 ];
 

@@ -1,18 +1,27 @@
 @import "tailwindcss";
 
 @theme {
-  --color-forest: #2D4F3E;
-  --color-forest-dark: #1C3328;
-  --color-cream: #FAF8F2;
-  --color-beige-warm: #EEDEC1;
-  --color-beige-light: #FAF4EB;
-  --color-terracotta: #D07255;
-  --color-terracotta-dark: #B85F44;
-  --color-slate: #4A4A4A;
-  --color-offwhite: #FCFBF8;
-  --color-border: #D8CDBB;
-  --color-success: #457855;
-  --color-white: #FFFFFF;
+  /* New elegant color palette */
+  --color-forest: #154230;         /* Emerald Green */
+  --color-forest-dark: #0E2B20;    /* Darker Emerald */
+  
+  --color-cream: #E6E2DA;          /* Soft Cream */
+  --color-beige-warm: #E6E2DA;     /* Soft Cream */
+  --color-beige-light: #F2EFE9;    /* Lighter Cream for hover/alternates */
+  
+  --color-terracotta: #5D1E21;     /* Deep Burgundy */
+  --color-terracotta-dark: #3C1315;/* Darker Burgundy */
+  
+  --color-slate: #101111;          /* Charcoal Black */
+  --color-offwhite: #FFFFFF;       /* Pure White */
+  
+  --color-border: #A6824A;         /* Antique Gold */
+  --color-success: #154230;        /* Emerald Green */
+
+  --color-primary: #154230;
+  --color-primary-hover: #0E2B20;
+  --color-bg: #E6E2DA;
+  --color-text-main: #101111;
 
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-heading: var(--font-heading), ui-sans-serif, system-ui, sans-serif;
@@ -30,20 +39,29 @@
   }
 
   body {
-    background-color: var(--color-beige-warm);
-    color: var(--color-slate);
+    background-color: var(--color-bg);
+    color: var(--color-text-main);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
-    color: var(--color-forest);
+    font-weight: 700;
+    letter-spacing: -0.02em;
   }
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+  
+  .glass {
+    background: rgba(230, 226, 218, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(166, 130, 74, 0.2);
   }
 }

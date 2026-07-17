@@ -17,7 +17,7 @@ export function Section({
   const backgrounds = {
     warmBeige: "bg-[var(--color-beige-warm)]",
     lightBeige: "bg-[var(--color-beige-light)]",
-    white: "bg-[var(--color-white)]",
+    white: "bg-white",
     forest: "bg-[var(--color-forest)] text-white",
   };
 

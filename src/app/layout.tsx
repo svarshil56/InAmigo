@@ -13,8 +13,8 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "InAmigos Foundation",
-  description: "Across education, women empowerment, environment, healthcare and community development, InAmigos Foundation is creating sustainable impact through people-powered action.",
+  title: "InAmigos Foundation - Empowering Lives, Spreading Compassion",
+  description: "InAmigos Foundation is a Section 8 non-profit working across India on education, women empowerment, animal welfare, environment and community development.",
 };
 
 export default function RootLayout({
@@ -24,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${inter.variable} ${jakarta.variable} antialiased`}>
+      <body className={`${inter.variable} ${jakarta.variable} antialiased bg-[var(--color-bg)] text-[var(--color-text-main)] min-h-screen flex flex-col`}>
         {children}
       </body>
     </html>

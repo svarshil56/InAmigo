@@ -34,7 +34,7 @@ export function Button({
     secondary:
       "bg-[var(--color-terracotta)] text-white hover:bg-[var(--color-terracotta-dark)] focus-visible:ring-[var(--color-terracotta)] shadow-[0_4px_14px_0_rgba(208,114,85,0.25)] hover:shadow-[0_6px_20px_rgba(208,114,85,0.35)] hover:-translate-y-0.5",
     outline:
-      "border-2 border-white/20 bg-white/10 backdrop-blur-sm text-white hover:bg-white hover:text-[var(--color-forest)] hover:border-white shadow-sm hover:shadow-md",
+      "bg-white/100 backdrop-blur-sm border-2 border-[var(--color-border)] text-[var(--color-forest)] shadow-sm",
     ghost:
       "text-[var(--color-forest)] hover:bg-[var(--color-forest)] hover:text-white",
   };

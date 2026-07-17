@@ -25,7 +25,7 @@ export function About() {
           
           <FadeIn delay={0.2} className="relative h-64 md:h-80 w-full rounded-3xl overflow-hidden shadow-lg my-4">
             <Image 
-              src="https://inamigosfoundation.org.in/public/storage/settings/1738236437.jpg" 
+              src="/images/about_impact.png" 
               alt="About InAmigos Foundation"
               fill
               className="object-cover"
