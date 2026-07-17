@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import { Section } from "@/components/ui/Section";
@@ -6,16 +8,24 @@ import { Mail } from "lucide-react";
 
 export function Footer() {
   return (
-    <Section bg="forest" className="pb-8 pt-20 md:pt-32">
+    <Section bg="forest" className="pb-6 pt-12 md:pt-16">
       <FadeIn>
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-12 mb-16 border-b border-white/20 pb-16">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8 mb-8">
           <div className="max-w-md">
-            <Link href="/" className="flex items-center gap-3 mb-6">
+            <Link 
+              href="/" 
+              className="flex items-center gap-3 mb-6"
+              onClick={(e) => {
+                if (window.location.pathname === "/") {
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }
+              }}
+            >
               <Image
-                src="https://inamigosfoundation.org.in/public/storage/settings/174421468011.jpg"
+                src="/logo.webp"
                 alt="InAmigos Foundation"
-                width={48}
-                height={48}
+                width={60}
+                height={60}
                 className="rounded-full object-cover shadow-sm"
                 unoptimized
               />
@@ -23,7 +33,7 @@ export function Footer() {
                 InAmigos
               </span>
             </Link>
-            <p className="text-white/80 max-w-sm mb-8 leading-relaxed">
+            <p className="text-white/80 max-w-sm mb-6 leading-relaxed">
               A Section 8 registered non-profit organization creating sustainable impact across education,
               women empowerment, environment, healthcare and community development.
             </p>
@@ -48,8 +58,8 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-heading font-semibold text-lg mb-6 text-white">Quick Links</h4>
-            <nav className="flex flex-col space-y-4">
+            <h4 className="font-heading font-semibold text-lg mb-4 text-white">Quick Links</h4>
+            <nav className="flex flex-col space-y-3">
               <Link href="#about" className="text-white/70 hover:text-white transition-colors">About Us</Link>
               <Link href="#initiatives" className="text-white/70 hover:text-white transition-colors">Our Initiatives</Link>
               <Link href="#gallery" className="text-white/70 hover:text-white transition-colors">Gallery</Link>
@@ -58,16 +68,16 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="font-heading font-semibold text-lg mb-6 text-white">Contact</h4>
-            <ul className="space-y-4">
+            <h4 className="font-heading font-semibold text-lg mb-4 text-white">Contact</h4>
+            <ul className="space-y-3">
               <li className="flex items-center gap-3 text-white/70">
                 <Mail size={16} />
                 <a href="mailto:support@inamigosfoundation.org.in" className="hover:text-white transition-colors">
                   support@inamigosfoundation.org.in
                 </a>
               </li>
-              <li className="text-white/70 mt-4 text-sm">
-                Ward No. 5, Gram Post, Sipat Ujwal Nagar, Bilaspur, Chhattisgarh 495555<br /><br />
+              <li className="text-white/70 mt-4 text-sm leading-relaxed">
+                Ward No. 5, Gram Post, Sipat Ujwal Nagar, Bilaspur, Chhattisgarh 495555<br />
                 Registered under Section 8 of the Companies Act, 2013.<br />
                 80G & 12A Certified. CSR-1 & NITI Aayog Registered.
               </li>
@@ -75,7 +85,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-white/50">
+        <div className="border-t border-white/20 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-white/50">
           <p>© {new Date().getFullYear()} InAmigos Foundation. All rights reserved.</p>
           <div className="flex gap-6">
             <Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link>

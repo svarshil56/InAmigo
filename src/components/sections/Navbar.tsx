@@ -38,12 +38,20 @@ export function Navbar() {
       }`}
     >
       <div className="max-w-[1280px] mx-auto px-6 md:px-12 xl:px-8 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-3 group">
+        <Link 
+          href="/" 
+          className="flex items-center gap-3 group"
+          onClick={(e) => {
+            if (window.location.pathname === "/") {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }
+          }}
+        >
           <Image 
             src="/logo.webp" 
             alt="InAmigos Foundation" 
-            width={40} 
-            height={40} 
+            width={48} 
+            height={48} 
             className="rounded-full object-cover shadow-sm"
             unoptimized
           />
@@ -71,7 +79,7 @@ export function Navbar() {
             href="https://rzp.io/l/kWQ87HP" 
             size="sm" 
             variant={scrolled ? "primary" : "outline"}
-            className={!scrolled ? "border-white/50 text-white hover:bg-white hover:text-[var(--color-forest)]" : ""}
+            className={!scrolled ? "border-white/50 text-[var(--color-forest)] hover:bg-white hover:text-[var(--color-forest)]" : ""}
           >
             Donate
           </Button>

@@ -39,6 +39,11 @@ export const metadata: Metadata = {
     description: "Working across India on education, women empowerment, animal welfare, and environment.",
     images: ["https://inamigosfoundation.org.in/public/storage/settings/174421468011.jpg"],
   },
+  icons: {
+    icon: "/logo.webp",
+    shortcut: "/logo.webp",
+    apple: "/logo.webp",
+  },
 };
 
 export default function RootLayout({
