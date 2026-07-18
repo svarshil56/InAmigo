@@ -41,7 +41,7 @@ export function Navbar() {
         <Link 
           href="/" 
           className="flex items-center gap-3 group"
-          onClick={(e) => {
+          onClick={() => {
             if (window.location.pathname === "/") {
               window.scrollTo({ top: 0, behavior: "smooth" });
             }

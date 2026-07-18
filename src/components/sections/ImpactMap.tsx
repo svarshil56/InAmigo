@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+
 import { Section } from "@/components/ui/Section";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { MapPin } from "lucide-react";
@@ -25,7 +25,7 @@ export function ImpactMap() {
                 28 States of India.
               </h2>
               <p className="text-lg text-[var(--color-slate)] leading-relaxed mb-8">
-                What started on September 23, 2020, as a local mission in Chhattisgarh has now expanded into a nationwide movement. Through our dedicated network of youth and professionals, InAmigos Foundation's impact now ripples across the entire country.
+                What started on September 23, 2020, as a local mission in Chhattisgarh has now expanded into a nationwide movement. Through our dedicated network of youth and professionals, InAmigos Foundation&apos;s impact now ripples across the entire country.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-8">

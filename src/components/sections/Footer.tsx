@@ -15,7 +15,7 @@ export function Footer() {
             <Link 
               href="/" 
               className="flex items-center gap-3 mb-6"
-              onClick={(e) => {
+              onClick={() => {
                 if (window.location.pathname === "/") {
                   window.scrollTo({ top: 0, behavior: "smooth" });
                 }

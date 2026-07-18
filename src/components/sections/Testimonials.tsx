@@ -96,7 +96,7 @@ export function Testimonials() {
                 <div className="flex-1 text-center md:text-left relative">
                   <Quote className="w-12 h-12 text-[var(--color-terracotta)]/20 absolute -top-4 -left-4 md:-top-6 md:-left-8 -z-10 rotate-180" />
                   <p className="text-lg md:text-xl text-[var(--color-slate)] font-medium leading-relaxed italic mb-6">
-                    "{testimonials[currentIndex].quote}"
+                    &quot;{testimonials[currentIndex].quote}&quot;
                   </p>
                   <div>
                     <h4 className="text-xl font-bold text-[var(--color-forest)]">
