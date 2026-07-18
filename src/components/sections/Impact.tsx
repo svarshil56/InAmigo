@@ -39,7 +39,7 @@ export function Impact() {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
         {stats.map((stat, index) => (
-          <FadeIn key={stat.title} delay={index * 0.15} className="bg-white rounded-[2rem] p-8 md:p-10 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.05)] border border-[var(--color-border)]/20 flex flex-col justify-between hover:shadow-[0_20px_50px_-15px_rgba(0,0,0,0.1)] transition-shadow duration-500 min-h-[320px]">
+          <FadeIn key={stat.title} delay={index * 0.15} className="bg-white rounded-[2rem] p-6 md:p-10 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.05)] border border-[var(--color-border)]/20 flex flex-col justify-between hover:shadow-[0_20px_50px_-15px_rgba(0,0,0,0.1)] transition-shadow duration-500 min-h-[280px] md:min-h-[320px]">
             <div>
               <p className="text-[var(--color-forest)] font-bold tracking-widest text-xs md:text-sm uppercase mb-12">
                 {stat.title}
@@ -47,7 +47,7 @@ export function Impact() {
             </div>
             
             <div>
-              <h3 className="font-heading font-black text-6xl md:text-7xl lg:text-8xl text-black mb-6 tracking-tighter">
+              <h3 className="font-heading font-black text-5xl md:text-7xl lg:text-8xl text-black mb-6 tracking-tighter">
                 <Counter value={stat.value} />
                 <span className="text-[var(--color-terracotta)]">{stat.suffix}</span>
               </h3>

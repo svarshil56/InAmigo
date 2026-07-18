@@ -73,7 +73,7 @@ export function Testimonials() {
           </button>
 
           {/* Carousel */}
-          <div className="relative h-[400px] md:h-[350px]">
+          <div className="relative h-[500px] sm:h-[450px] md:h-[350px]">
             <AnimatePresence mode="wait">
               <motion.div
                 key={currentIndex}
@@ -81,9 +81,9 @@ export function Testimonials() {
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: -50 }}
                 transition={{ duration: 0.3 }}
-                className="absolute inset-0 bg-white rounded-3xl p-8 md:p-12 shadow-xl flex flex-col md:flex-row gap-8 items-center"
+                className="absolute inset-0 bg-white rounded-3xl p-6 sm:p-8 md:p-12 shadow-xl flex flex-col md:flex-row gap-6 md:gap-8 items-center"
               >
-                <div className="relative w-32 h-32 md:w-48 md:h-48 shrink-0 rounded-full overflow-hidden border-4 border-[var(--color-warmBeige)] shadow-inner">
+                <div className="relative w-24 h-24 sm:w-32 sm:h-32 md:w-48 md:h-48 shrink-0 rounded-full overflow-hidden border-4 border-[var(--color-warmBeige)] shadow-inner">
                   <Image
                     src={testimonials[currentIndex].image}
                     alt={testimonials[currentIndex].name}
@@ -95,7 +95,7 @@ export function Testimonials() {
                 
                 <div className="flex-1 text-center md:text-left relative">
                   <Quote className="w-12 h-12 text-[var(--color-terracotta)]/20 absolute -top-4 -left-4 md:-top-6 md:-left-8 -z-10 rotate-180" />
-                  <p className="text-lg md:text-xl text-[var(--color-slate)] font-medium leading-relaxed italic mb-6">
+                  <p className="text-base sm:text-lg md:text-xl text-[var(--color-slate)] font-medium leading-relaxed italic mb-6">
                     &quot;{testimonials[currentIndex].quote}&quot;
                   </p>
                   <div>
